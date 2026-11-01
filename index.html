@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Explore the World</title>
+
+```
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- JavaScript -->
+<script src="script.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <span class="brand-icon">✦</span> wanderlust<span class="brand-dot">.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a class="btn btn-book" href="#destinations">Explore now ↗</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            YOUR NEXT ADVENTURE STARTS HERE
+        </div>
+
+        <h1>Collect moments,<br>not <span>things.</span></h1>
+
+        <p>
+            Discover breathtaking destinations, hidden gems, and
+            unforgettable experiences around the world.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#destinations" class="btn btn-primary-custom">
+                Explore destinations <span>↗</span>
+            </a>
+            <a href="#about" class="btn btn-outline-custom">
+                Discover our story
+            </a>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="hero-stat">
+                <h3>20+</h3>
+                <span>Dream destinations</span>
+            </div>
+            <div class="hero-stat">
+                <h3>10k+</h3>
+                <span>Happy explorers</span>
+            </div>
+            <div class="hero-stat">
+                <h3>4.9<span class="star">★</span></h3>
+                <span>Traveler rating</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span></span> SCROLL TO EXPLORE
+    </div>
+</header>
+
+<!-- DESTINATIONS SECTION -->
+<section class="destinations-section section-padding" id="destinations">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">✦ FIND YOUR ESCAPE</span>
+                <h2>Places that feel<br>like a <span>dream.</span></h2>
+            </div>
+
+            <p>
+                From peaceful coastlines to vibrant cities,
+                find the perfect destination for your next story.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Destination 1 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85"
+                            alt="Colorful coastal villages of Italy">
+                        <span class="destination-tag">MOST LOVED</span>
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add Italy to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">ITALY, EUROPE</span>
+                            <h3>Amalfi Coast</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Coastal charm, pastel villages, and endless sunshine.</p>
+                </article>
+            </div>
+
+            <!-- Destination 2 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85"
+                            alt="Traditional streets and architecture in Kyoto">
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add Kyoto to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">JAPAN, ASIA</span>
+                            <h3>Kyoto</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Ancient temples, peaceful gardens, and timeless beauty.</p>
+                </article>
+            </div>
+
+            <!-- Destination 3 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85"
+                            alt="Beautiful white buildings overlooking the sea in Greece">
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add Santorini to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">GREECE, EUROPE</span>
+                            <h3>Santorini</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Whitewashed villages, blue waters, and magical sunsets.</p>
+                </article>
+            </div>
+
+            <!-- Destination 4 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=85"
+                            alt="Tropical island with turquoise water">
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add Bali to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">INDONESIA, ASIA</span>
+                            <h3>Bali</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Tropical beaches, lush greenery, and slow living.</p>
+                </article>
+            </div>
+
+            <!-- Destination 5 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85"
+                            alt="Modern architecture and skyline in Dubai">
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add Dubai to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">UAE, MIDDLE EAST</span>
+                            <h3>Dubai</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Iconic skylines, desert adventures, and luxury stays.</p>
+                </article>
+            </div>
+
+            <!-- Destination 6 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                            alt="Beautiful mountain landscape surrounded by nature">
+                        <span class="destination-tag green-tag">NATURE ESCAPE</span>
+                        <button class="favorite-btn" type="button"
+                            aria-label="Add the mountains to favorites"
+                            aria-pressed="false">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <span class="destination-country">SWITZERLAND, EUROPE</span>
+                            <h3>Swiss Alps</h3>
+                        </div>
+                        <span class="destination-arrow">↗</span>
+                    </div>
+                    <p>Mountain air, scenic trails, and breathtaking views.</p>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section section-padding" id="about">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="about-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                        alt="Majestic mountains surrounded by clouds"
+                        class="about-image">
+
+                    <div class="about-floating-card">
+                        <span>✦</span>
+                        <div>
+                            <strong>Travel with purpose</strong>
+                            <small>Make every journey count.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <span class="section-label">✦ OUR STORY</span>
+                <h2 class="about-title">
+                    The world is too beautiful to <span>stay in one place.</span>
+                </h2>
+
+                <p class="about-description">
+                    Wanderlust was created for curious souls who believe
+                    that the best memories are made beyond their comfort
+                    zones. We help you discover places that inspire you,
+                    connect with different cultures, and see the world
+                    with fresh eyes.
+                </p>
+
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="feature-icon">◎</span>
+                        <div>
+                            <h4>Curated experiences</h4>
+                            <p>Discover destinations worth remembering.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-feature">
+                        <span class="feature-icon">♡</span>
+                        <div>
+                            <h4>Made for explorers</h4>
+                            <p>Find inspiration for your next adventure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="text-link">
+                    Let's plan your next adventure <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE BANNER -->
+<section class="quote-section">
+    <div class="container text-center">
+        <span class="quote-mark">“</span>
+        <h2>We travel not to escape life,<br>but for life not to escape us.</h2>
+        <p>YOUR NEXT CHAPTER IS WAITING.</p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div class="row g-5">
+
+            <div class="col-lg-5">
+                <span class="section-label">✦ LET'S CONNECT</span>
+                <h2 class="contact-title">
+                    Your next adventure<br>starts with <span>hello.</span>
+                </h2>
+
+                <p class="contact-description">
+                    Have a destination in mind or need a little
+                    inspiration? Send us a message and let's start
+                    dreaming about your next journey.
+                </p>
+
+                <div class="contact-detail">
+                    <span>✉</span>
+                    <div>
+                        <small>EMAIL US</small>
+                        <p>hello@wanderlust.example</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>◎</span>
+                    <div>
+                        <small>FOLLOW THE JOURNEY</small>
+                        <p>@wanderlust.travel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <form class="contact-form" id="contactForm">
+                    <h3>Let's plan something beautiful.</h3>
+                    <p>Fill in the details below to get in touch.</p>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="name"
+                                name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email"
+                                name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="destination" class="form-label">Dream destination</label>
+                            <select class="form-select" id="destination" name="destination" required>
+                                <option value="" selected disabled>Where would you love to go?</option>
+                                <option>Italy</option>
+                                <option>Japan</option>
+                                <option>Greece</option>
+                                <option>Bali</option>
+                                <option>Dubai</option>
+                                <option>Switzerland</option>
+                                <option>Somewhere else</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" class="form-label">Your message</label>
+                            <textarea class="form-control" id="message"
+                                name="message" rows="4"
+                                placeholder="Tell us about your dream trip..."
+                                required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                Send your message <span>↗</span>
+                            </button>
+                        </div>
+
+                        <div class="col-12">
+                            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <a class="navbar-brand footer-brand" href="#home">
+                <span class="brand-icon">✦</span> wanderlust<span class="brand-dot">.</span>
+            </a>
+
+            <p>Collect moments. Discover yourself. Explore the world.</p>
+
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> Wanderlust. All rights reserved.</span>
+            <span>Made with curiosity & ♡</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
